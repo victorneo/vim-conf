@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'nvie/vim-flake8'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'guns/vim-clojure-static'
