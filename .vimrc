@@ -24,7 +24,7 @@ fixdel
 colorscheme benokai
 set pastetoggle=<F12>
 highlight Pmenu ctermbg=238 gui=bold
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.egg,*.tar.gz,*.tar,*.gz
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.egg,*.tar.gz,*.tar,*.gz,*.out
 
 " Shortcuts for moving around splits with ctrl + Arrow
 map <C-Left> <C-W><Left>
@@ -34,7 +34,7 @@ map <C-Down> <C-W><Down>
 
 " NERDTree Settings
 map <F2> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\.out$']
 
 " Auto-enable RainbowParaentheses
 au VimEnter * RainbowParenthesesToggle
