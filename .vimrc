@@ -6,6 +6,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'guns/vim-clojure-static'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " General Vim Settings
@@ -35,6 +36,9 @@ map <C-Down> <C-W><Down>
 " NERDTree Settings
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\.out$']
+
+" vim-javascript settings
+let g:javascript_plugin_flow = 1
 
 " Auto-enable RainbowParaentheses
 au VimEnter * RainbowParenthesesToggle
