@@ -36,6 +36,7 @@ map <C-Down> <C-W><Down>
 " NERDTree Settings
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\.out$']
+let NERDTreeShowHidden=1
 
 " vim-javascript settings
 let g:javascript_plugin_flow = 1
