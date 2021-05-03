@@ -35,6 +35,7 @@ map <C-Down> <C-W><Down>
 
 " NERDTree Settings
 map <F2> :NERDTreeToggle<CR>
+map <F3> :Todo<CR>
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\.out$', '\.git$', '\.class$', '.DS_Store', '\.swp$', '^.pytest_cache$']
 let NERDTreeShowHidden=1
 
@@ -45,3 +46,6 @@ let g:javascript_plugin_flow = 1
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
+
+" Enable TODO search
+command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
